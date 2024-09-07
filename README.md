@@ -11,8 +11,9 @@
 1. European call prices are monotonically decreasing with respect to the strike:
 
     $$
-    C(S_0, K_1, T, \sigma(K_1), r, q) \geq C(S_0, K_2, T, \sigma(K_2), r, q) ~\text{for}~K_1 < K_2
+    C(S_0, K_1, T, \sigma(K_1), r, q) \geq C(S_0, K_2, T, \sigma(K_2), r, q) ~\text{for}~ K_1 < K_2
     $$
+
 
 
 2. The European call price as a function of strike has to be convex every where: for any three points $K_1 < K_2 < K_3$
