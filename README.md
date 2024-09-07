@@ -10,17 +10,15 @@
 ##### Smile Arbitrage
 1. European call prices are monotonically decreasing with respect to the strike:
 
-    <img width="475" alt="image" src="https://github.com/user-attachments/assets/4203cad9-115d-435e-bc9c-badfaea7fef2">
-
-2. The European call price as a function of strike has to be convex every where: for any three points $K_1 < K_2 < K_3$
+    $C(S_0, K_1, T, \sigma(K_1), r, q) \geq C(S_0, K_2, T, \sigma(K_2), r, q) ~\text{for}~K_1 < K_2¥
+   
+3. The European call price as a function of strike has to be convex every where: for any three points $K_1 < K_2 < K_3$
 
     $\frac{C(K_2) - C(K_1) } {K_2 - K_1} < \frac{C(K_3) - C(K_2) } {K_3 - K_2}$
 
     or
 
-    \begin{align}
-    C(K_2)  < C(K_3)\frac{K_2 - K_1} {K_3 - K_1} + C(K_1)\frac{K_3-K_2} {K_3 - K_1}  \tag{2}
-    \end{align}
+    $C(K_2)  < C(K_3)\frac{K_2 - K_1} {K_3 - K_1} + C(K_1)\frac{K_3-K_2} {K_3 - K_1}  \tag{2}$
 
     This is also equivalent to "butterfly price has to be non-negative".
 
@@ -28,21 +26,14 @@
 
 The undiscounted call price is the expectation of payoff under risk neutral measure
 
-\begin{align*}
-C(K) = E[\max(S-K, 0)]
-\end{align*}
+$C(K) = E[\max(S-K, 0)]$
 
 And expectation is an integral over the probability density function $p(s)$
 
-\begin{align*}
-C(K) = \int_{K}^{+\infty} (s-K) p(s) ds
-\end{align*}
-
+$C(K) = \int_{K}^{+\infty} (s-K) p(s) ds$
 The 1st non-arbitrage condition translates to
 
-\begin{align*}
-& C(K_1) - C(K_2) = \left[ \int_{K_1}^{K_2} (s-K_1) p(s) ds  + \int_{K_2}^{+\infty} (K_2-K_1) p(s) ds \right]
-\end{align*}
+$& C(K_1) - C(K_2) = \left[ \int_{K_1}^{K_2} (s-K_1) p(s) ds  + \int_{K_2}^{+\infty} (K_2-K_1) p(s) ds \right]$
 
 which is positive by definition if $K_2 > K_1$.
 
