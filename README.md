@@ -14,9 +14,7 @@
 
 2. The European call price as a function of strike has to be convex every where: for any three points $K_1 < K_2 < K_3$
 
-    $
-    \frac{C(K_2) - C(K_1) } {K_2 - K_1} < \frac{C(K_3) - C(K_2) } {K_3 - K_2}
-    $
+    $\frac{C(K_2) - C(K_1) } {K_2 - K_1} < \frac{C(K_3) - C(K_2) } {K_3 - K_2}$
 
     or
 
