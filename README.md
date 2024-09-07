@@ -33,13 +33,12 @@ And expectation is an integral over the probability density function $p(s)$
 $C(K) = \int_{K}^{+\infty} (s-K) p(s) ds$
 The 1st non-arbitrage condition translates to
 
-$& C(K_1) - C(K_2) = \left[ \int_{K_1}^{K_2} (s-K_1) p(s) ds  + \int_{K_2}^{+\infty} (K_2-K_1) p(s) ds \right]$
+$C(K_1) - C(K_2) = \left[ \int_{K_1}^{K_2} (s-K_1) p(s) ds  + \int_{K_2}^{+\infty} (K_2-K_1) p(s) ds \right]$
 
 which is positive by definition if $K_2 > K_1$.
 
 The 2nd non-arbitrage condition translates to
 
-\begin{align*}
 & C(K_3)\frac{K_2 - K_1} {K_3 - K_1} + C(K_1)\frac{K_3-K_2} {K_3 - K_1} - C(K_2) \\
 = & \frac{K_3-K_2} {K_3 - K_1} \int_{K_1}^{K_2} (s-K_1) p(s) ds + \frac{K_2 - K_1} {K_3 - K_1} \int_{K_2}^{K_3} (K_3 - s) p(s) ds
 \end{align*}
